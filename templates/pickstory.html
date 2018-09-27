@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pick A Story</title>
+</head>
+<body>
+  <h1>Stories</h1>
+  <form action="/form">
+      <select name = "story">
+        {% for i in range(length) %}
+          <option value="{{i}}">{{stories[i].title}}</option>
+        {% endfor %} 
+      </select>
+      <br>
+      <button type="submit">Submit</button>
+  </form>
+  
+</body>
+</html>
